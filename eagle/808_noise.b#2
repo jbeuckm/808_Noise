@@ -1897,7 +1897,7 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="19.685" y="5.08" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="19.685" y="5.08" size="1.778" layer="27" display="off"/>
 </element>
-<element name="TM4" library="TR808clone" package="B64Y" value="22KB" x="35.56" y="50.8" rot="R180"/>
+<element name="TM4" library="TR808clone" package="B64Y" value="22KB" x="34.29" y="50.8" rot="R180"/>
 <element name="U$1" library="eurorack" package="POWER_16" value="POWER" x="22.86" y="68.58"/>
 <element name="WHITE_NOISE" library="erthenvar" package="ERTHENVAR-JACK-90DEG" value="AUDIO-JACK" x="0" y="10.16" rot="R90"/>
 <element name="U$2" library="adafruit" package="FB" value="FB" x="22.86" y="60.96"/>
@@ -1935,8 +1935,7 @@ design rules under a new name.</description>
 <wire x1="11.43" y1="57.15" x2="11.43" y2="56.8325" width="1.016" layer="16"/>
 <wire x1="11.7475" y1="56.515" x2="20.32" y2="56.515" width="1.016" layer="16"/>
 <wire x1="11.7475" y1="56.515" x2="11.43" y2="57.15" width="1.016" layer="16"/>
-<wire x1="29.845" y1="50.165" x2="29.845" y2="46.99" width="1.016" layer="16"/>
-<wire x1="27.94" y1="52.705" x2="29.845" y2="50.165" width="1.016" layer="16"/>
+<wire x1="27.94" y1="52.705" x2="29.845" y2="46.99" width="1.016" layer="16"/>
 <wire x1="27.94" y1="54.61" x2="27.94" y2="52.705" width="1.016" layer="16"/>
 <wire x1="19.05" y1="69.85" x2="19.05" y2="67.31" width="1.016" layer="16"/>
 <wire x1="19.05" y1="67.31" x2="21.59" y2="67.31" width="1.016" layer="16"/>
@@ -1976,7 +1975,7 @@ design rules under a new name.</description>
 <contactref element="R129" pad="1"/>
 <contactref element="R130" pad="2"/>
 <contactref element="TM4" pad="S"/>
-<wire x1="32.385" y1="46.99" x2="35.56" y2="50.8" width="0.8128" layer="16"/>
+<wire x1="32.385" y1="46.99" x2="34.29" y2="50.8" width="0.8128" layer="16"/>
 <wire x1="32.385" y1="46.99" x2="34.925" y2="46.99" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$490">
@@ -2101,8 +2100,9 @@ design rules under a new name.</description>
 <signal name="N$228">
 <contactref element="R127" pad="2"/>
 <contactref element="TM4" pad="A"/>
-<wire x1="33.02" y1="52.07" x2="33.02" y2="50.8" width="0.8128" layer="16"/>
-<wire x1="35.56" y1="54.61" x2="33.02" y2="52.07" width="0.8128" layer="16"/>
+<wire x1="35.56" y1="54.61" x2="33.655" y2="54.61" width="0.8128" layer="16"/>
+<wire x1="33.655" y1="54.61" x2="33.02" y2="53.975" width="0.8128" layer="16"/>
+<wire x1="33.02" y1="53.975" x2="31.75" y2="50.8" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$280">
 <contactref element="C31" pad="-"/>
