@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -22584,16 +22584,14 @@ Digikey #P9821BK-ND</description>
 <parts>
 <part name="R130" library="TR808clone" deviceset="R-EU_" device="0207/7" value="1M"/>
 <part name="R132" library="TR808clone" deviceset="R-EU_" device="0207/7" value="22K"/>
-<part name="R131" library="TR808clone" deviceset="R-EU_" device="0207/7" value="300K"/>
+<part name="R131" library="TR808clone" deviceset="R-EU_" device="0207/7" value="100K"/>
 <part name="V303" library="supply1" deviceset="GND" device=""/>
 <part name="V304" library="supply1" deviceset="GND" device=""/>
-<part name="R127" library="TR808clone" deviceset="R-EU_" device="0207/7" value="47K"/>
 <part name="V305" library="supply1" deviceset="GND" device=""/>
 <part name="C29" library="TR808clone" deviceset="CPOL-EU" device="E2.5-5" value="47/16"/>
 <part name="V306" library="supply1" deviceset="GND" device=""/>
 <part name="R124" library="TR808clone" deviceset="R-EU_" device="0207/7" value="100R"/>
 <part name="C31" library="TR808clone" deviceset="CPOL-EU" device="E2.5-5" value="1/50"/>
-<part name="R129" library="TR808clone" deviceset="R-EU_" device="0207/7" value="330K"/>
 <part name="R128" library="TR808clone" deviceset="R-EU_" device="0207/7" value="1M"/>
 <part name="C32" library="TR808clone" deviceset="C-EU" device="050-024X044" value="39n"/>
 <part name="C33" library="TR808clone" deviceset="C-EU" device="4MM_PITCH" value="18n"/>
@@ -22620,6 +22618,8 @@ Digikey #P9821BK-ND</description>
 <part name="C7" library="rcl" deviceset="CPOL-US" device="B45181A" value="10u"/>
 <part name="C8" library="rcl" deviceset="C-US" device="050-024X044" value="100n"/>
 <part name="C9" library="rcl" deviceset="C-US" device="050-024X044" value="100n"/>
+<part name="C1" library="rcl" deviceset="CPOL-US" device="B45181A" value="10uF"/>
+<part name="R129" library="TR808clone" deviceset="R-EU_" device="0207/7" value="0R"/>
 </parts>
 <sheets>
 <sheet>
@@ -22632,16 +22632,11 @@ Digikey #P9821BK-ND</description>
 <instance part="R131" gate="G$1" x="38.1" y="12.7" rot="R270"/>
 <instance part="V303" gate="1" x="20.32" y="2.54"/>
 <instance part="V304" gate="1" x="38.1" y="2.54"/>
-<instance part="R127" gate="G$1" x="27.94" y="43.18" smashed="yes">
-<attribute name="NAME" x="24.13" y="44.6786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="24.13" y="39.878" size="1.778" layer="96"/>
-</instance>
-<instance part="V305" gate="1" x="22.86" y="38.1"/>
+<instance part="V305" gate="1" x="22.86" y="35.56"/>
 <instance part="C29" gate="G$1" x="5.08" y="17.78"/>
 <instance part="V306" gate="1" x="5.08" y="2.54"/>
 <instance part="R124" gate="G$1" x="5.08" y="33.02" rot="R90"/>
 <instance part="C31" gate="G$1" x="30.48" y="22.86" rot="R90"/>
-<instance part="R129" gate="G$1" x="38.1" y="38.1" rot="R270"/>
 <instance part="R128" gate="G$1" x="10.16" y="27.94" rot="R180"/>
 <instance part="C32" gate="G$1" x="73.66" y="27.94" rot="R90"/>
 <instance part="C33" gate="G$1" x="78.74" y="17.78"/>
@@ -22673,6 +22668,8 @@ Digikey #P9821BK-ND</description>
 <instance part="C8" gate="G$1" x="40.64" y="86.36"/>
 <instance part="C9" gate="G$1" x="40.64" y="73.66"/>
 <instance part="IC1" gate="P" x="15.24" y="50.8"/>
+<instance part="C1" gate="G$1" x="27.94" y="43.18" rot="R270"/>
+<instance part="R129" gate="G$1" x="38.1" y="40.64" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -22684,9 +22681,9 @@ Digikey #P9821BK-ND</description>
 <wire x1="38.1" y1="5.08" x2="38.1" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R127" gate="G$1" pin="1"/>
 <pinref part="V305" gate="1" pin="GND"/>
-<wire x1="22.86" y1="40.64" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="38.1" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="C29" gate="G$1" pin="-"/>
@@ -22731,21 +22728,14 @@ Digikey #P9821BK-ND</description>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 </segment>
 </net>
-<net name="N$489" class="0">
-<segment>
-<wire x1="38.1" y1="48.26" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="48.26" x2="43.18" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="R129" gate="G$1" pin="1"/>
-<pinref part="R130" gate="G$1" pin="2"/>
-<pinref part="TM4" gate="1" pin="S"/>
-<junction x="38.1" y="48.26"/>
-</segment>
-</net>
 <net name="N$490" class="0">
 <segment>
-<wire x1="38.1" y1="33.02" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="R129" gate="G$1" pin="2"/>
-<pinref part="IC1" gate="A" pin="-IN"/>
+<wire x1="38.1" y1="48.26" x2="43.18" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="R130" gate="G$1" pin="2"/>
+<pinref part="TM4" gate="1" pin="S"/>
+<pinref part="R129" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="45.72" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
+<junction x="38.1" y="48.26"/>
 </segment>
 </net>
 <net name="N$491" class="0">
@@ -22878,12 +22868,6 @@ Digikey #P9821BK-ND</description>
 <junction x="91.44" y="60.96"/>
 </segment>
 </net>
-<net name="N$228" class="0">
-<segment>
-<pinref part="R127" gate="G$1" pin="2"/>
-<pinref part="TM4" gate="1" pin="A"/>
-</segment>
-</net>
 <net name="N$280" class="0">
 <segment>
 <pinref part="C31" gate="G$1" pin="-"/>
@@ -22956,6 +22940,20 @@ Digikey #P9821BK-ND</description>
 <pinref part="U$3" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="76.2" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="-12V"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="TM4" gate="1" pin="A"/>
+<pinref part="C1" gate="G$1" pin="+"/>
+<wire x1="30.48" y1="43.18" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R129" gate="G$1" pin="2"/>
+<pinref part="IC1" gate="A" pin="-IN"/>
+<wire x1="38.1" y1="35.56" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

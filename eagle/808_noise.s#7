@@ -12683,7 +12683,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="NAME" x="24.13" y="51.689" size="1.778" layer="95"/>
 <attribute name="VALUE" x="24.13" y="49.53" size="1.778" layer="96"/>
 </instance>
-<instance part="U24" gate="G$3" x="10.16" y="53.34"/>
+<instance part="U24" gate="G$3" x="15.24" y="50.8"/>
 <instance part="U$1" gate="G$1" x="93.98" y="55.88"/>
 <instance part="WHITE_NOISE" gate="G$1" x="68.58" y="43.18" rot="R180"/>
 <instance part="PINK_NOISE" gate="G$1" x="111.76" y="30.48" rot="R180"/>
@@ -12691,10 +12691,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="IC1" gate="A" x="45.72" y="25.4" rot="MR180"/>
 <instance part="IC1" gate="B" x="91.44" y="25.4" rot="MR180"/>
 <instance part="SUPPLY1" gate="+15V" x="109.22" y="63.5"/>
-<instance part="SUPPLY2" gate="+15V" x="10.16" y="66.04"/>
-<instance part="SUPPLY3" gate="+15V" x="5.08" y="43.18"/>
+<instance part="SUPPLY2" gate="+15V" x="15.24" y="63.5"/>
+<instance part="SUPPLY3" gate="+15V" x="5.08" y="45.72"/>
 <instance part="SUPPLY4" gate="G$1" x="109.22" y="50.8"/>
-<instance part="SUPPLY5" gate="G$1" x="10.16" y="40.64"/>
+<instance part="SUPPLY5" gate="G$1" x="15.24" y="38.1"/>
 <instance part="V2" gate="1" x="104.14" y="25.4"/>
 <instance part="V3" gate="1" x="60.96" y="38.1"/>
 </instances>
@@ -12849,13 +12849,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="+15V" class="2">
 <segment>
 <pinref part="U24" gate="G$3" pin="V+"/>
-<wire x1="10.16" y1="60.96" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="58.42" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
 <label x="7.62" y="63.5" size="1.778" layer="95"/>
 <pinref part="SUPPLY2" gate="+15V" pin="+15V"/>
 </segment>
 <segment>
 <pinref part="R124" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="38.1" x2="5.08" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="38.1" x2="5.08" y2="43.18" width="0.1524" layer="91"/>
 <label x="2.54" y="40.64" size="1.778" layer="95"/>
 <pinref part="SUPPLY3" gate="+15V" pin="+15V"/>
 </segment>
@@ -12868,7 +12868,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="-15V" class="2">
 <segment>
 <pinref part="U24" gate="G$3" pin="V-"/>
-<wire x1="10.16" y1="45.72" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="43.18" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
 <label x="7.62" y="40.64" size="1.778" layer="95"/>
 <pinref part="SUPPLY5" gate="G$1" pin="-15V"/>
 </segment>
