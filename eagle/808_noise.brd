@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -18,8 +19,8 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -1877,13 +1878,22 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C29" library="TR808clone" package="E2,5-5" value="47/16" x="21.59" y="46.99" rot="R90"/>
-<element name="C31" library="TR808clone" package="E2,5-5" value="1/50" x="15.24" y="45.72"/>
+<element name="C29" library="TR808clone" package="E2,5-5" value="47/16" x="21.59" y="46.99" smashed="yes" rot="R90">
+<attribute name="NAME" x="20.32" y="49.403" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="25.527" y="43.815" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C31" library="TR808clone" package="E2,5-5" value="1/50" x="15.24" y="45.72" smashed="yes">
+<attribute name="NAME" x="17.653" y="46.99" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="12.065" y="43.561" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
 <element name="C32" library="TR808clone" package="C050-024X044" value="39n" x="28.575" y="22.225"/>
 <element name="C33" library="TR808clone" package="C035-030X60" value="18n" x="9.525" y="24.13" rot="R180"/>
 <element name="IC1" library="linear" package="DIL08" value="TL072P" x="30.48" y="30.48" rot="R180"/>
 <element name="PINK_NOISE" library="erthenvar" package="ERTHENVAR-JACK-90DEG" value="AUDIO-JACK" x="0" y="27.94" rot="R90"/>
-<element name="Q1" library="transistor-npn" package="TO92" value="2N3904" x="12.7" y="50.8"/>
+<element name="Q1" library="transistor-npn" package="TO92" value="2N3904" x="12.7" y="50.8" smashed="yes">
+<attribute name="NAME" x="15.875" y="51.435" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="9.398" y="47.117" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
 <element name="R124" library="TR808clone" package="0207/7" value="100R" x="27.305" y="43.18" rot="R90"/>
 <element name="R128" library="TR808clone" package="0207/7" value="1M" x="19.685" y="41.275"/>
 <element name="R130" library="TR808clone" package="0207/7" value="1M" x="34.925" y="43.18" rot="R90"/>
@@ -1891,10 +1901,10 @@ design rules under a new name.</description>
 <element name="R132" library="TR808clone" package="0207/7" value="22K" x="20.32" y="22.86" rot="R180"/>
 <element name="R133" library="TR808clone" package="0207/7" value="22K" x="20.32" y="20.32"/>
 <element name="SV1" library="con-lsta" package="FE10-2" value="" x="19.685" y="5.08">
-<attribute name="OC_NEWARK" value="unknown" x="19.685" y="5.08" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="19.685" y="5.08" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="19.685" y="5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="19.685" y="5.08" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="19.685" y="5.08" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="19.685" y="5.08" size="1.778" layer="27" display="off"/>
 </element>
 <element name="TM4" library="TR808clone" package="B64Y" value="22KB" x="34.29" y="50.8" rot="R180"/>
 <element name="U$1" library="eurorack" package="POWER_16" value="POWER" x="22.86" y="68.58"/>
